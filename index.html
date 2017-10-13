@@ -10,7 +10,7 @@
             }
 
             body {
-
+                font-family: Helvetica, sans-serif;
             }
 
             .row {
@@ -20,39 +20,43 @@
                 height: 100vh;
             }
 
-            .row > div {
+            .row > a {
                 flex-basis: calc(100% / 3);
                 height: 50%;
-                text-align: center;
+                position: relative;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                background-size: cover;
+                color: #FFF;
+                font-size: 40px;
+                text-decoration: none;
+                letter-spacing: 3px;
+                font-weight: bold;
+                text-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
             }
         </style>
     </head>
     <body>
         <div class="row">
-            <div>
-                <a href="http://kalokopenhagen.dk/">Kalo</a>
-                <img src="">
-            </div>
-            <div>
-                <a href="https://www.tinytiny.dk/">TinyTiny</a>
-                <img src="">
-            </div>
-            <div>
-                <a href="http://www.bierbacks.com/">Bierbacks</a>
-                <img src="">
-            </div>
-            <div>
-                <a href="https://greenify.dk/">Greenify</a>
-                <img src="">
-            </div>
-            <div>
-                <a href="http://raw58.dk/">RAW58</a>
-                <img src="">
-            </div>
-            <div>
-                <a href="">Boho&#39;me</a>
-                <img src="">
-            </div>
+            <a href="http://kalokopenhagen.dk/" style="background-image: url('images/kalo.jpg');">
+                <div>Kalo</div>
+            </a>
+            <a href="https://www.tinytiny.dk/" style="background-image: url('images/tinytiny.jpg');">
+                <div>TinyTiny</div>
+            </a>
+            <a href="http://www.bierbacks.com/" style="background-image: url('images/bierbacks.jpg');">
+                <div>Bierbacks</div>
+            </a>
+            <a href="https://greenify.dk/" style="background-image: url('images/greenify.jpg');">
+                <div>Greenify</div>
+            </a>
+            <a href="http://raw58.dk/" style="background-image: url('images/raw58.jpg');">
+                <div>RAW58</div>
+            </a>
+            <a href="https://www.boho-me.dk/" style="background-image: url('images/bohome.jpg');">
+                <div>Boho&#39;me</div>
+            </a>
         </div>
     </body>
 </html>
